@@ -1,8 +1,8 @@
-<img width="400" height="225" alt="요약본" src="https://github.com/user-attachments/assets/f3f9cacd-847f-41c9-ad54-c277acc9c425" />
 
 # NDisplay — 프로젝트 문서
 
 > Unreal Engine **5.7** 기반 nDisplay(다중 디스플레이 / LED 월 / 돔) 실시간 렌더링 프로젝트
+<img width="400" height="225" alt="요약본" src="https://github.com/user-attachments/assets/f3f9cacd-847f-41c9-ad54-c277acc9c425" />
 
 ---
 
