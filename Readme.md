@@ -1,4 +1,4 @@
-# NDisplay0709 — 프로젝트 문서
+# NDisplay — 프로젝트 문서
 
 > Unreal Engine **5.7** 기반 nDisplay(다중 디스플레이 / LED 월 / 돔) 실시간 렌더링 프로젝트
 
