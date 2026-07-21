@@ -6,7 +6,7 @@
 
 ## 1. 프로젝트 개요
 
-**NDisplay0709**은 언리얼 엔진의 **nDisplay** 기능을 활용한 실시간 우주 비주얼라이제이션 프로젝트입니다. 지구, 위성, 우주 정거장, 성운/별 필드로 구성된 우주 공간을 여러 대의 디스플레이(또는 곡면 LED 월·돔)에 클러스터 렌더링하는 것을 목표로 합니다.
+언리얼 엔진의 **nDisplay** 기능을 활용한 프로젝트입니다. 우주 공간을 여러 대의 디스플레이(또는 곡면 LED 월·돔)에 클러스터 렌더링하는 것이 목표
 
 | 항목 | 내용 |
 |------|------|
@@ -50,7 +50,6 @@
 - **BP_Satlelite** — 위성 (공전 로직)
 - **BP_Terrain** — 지형 (달/사막 지형 표면)
 - **C_Obital** — 공전(궤도) 로직 컴포넌트
-- **C_Test_C** — 테스트용 액터
 
 ### 4.2 에셋 (Fab / 무료 마켓플레이스)
 - Space Station Module (우주 정거장)
@@ -60,24 +59,11 @@
 - **StarfieldFree** — 별 필드, 성운, 실제 별 텍스처, 관련 머티리얼·레벨
 
 ### 4.3 사운드
-- `IReallyWantToStayAtYourHouse` — 배경 음악
+- `IReallyWantToStayAtYourHouse` — 배경 음악(I Really Want to Stay at Your House)
 
 ---
 
-## 5. 레벨 (Maps)
-
-| 맵 | 용도 |
-|----|------|
-| `MainTest` | **에디터 시작 맵 / 게임 기본 맵** (현재 작업 기준 맵) |
-| `Main` | 메인 씬 |
-| `MainDumy` | 메인 더미 / 레이아웃 검증용 |
-| `Test` | 테스트용 |
-
-> 시작 맵과 기본 게임 맵은 모두 `MainTest`로 설정되어 있습니다.
-
----
-
-## 6. nDisplay 구성
+## 5. nDisplay 구성
 
 - **NDC_Origin_01** (`Content/nDisplay`) — 본 프로젝트의 nDisplay 클러스터 설정 에셋 (커스텀 구성)
 - **ExampleConfigs** — 언리얼 제공 참고용 예제 구성
@@ -88,14 +74,14 @@
 
 ---
 
-## 7. LiveLink
+## 6. LiveLink
 
 - **PreSet01** (`Content/LiveLinkPresets`) — 기본 LiveLink 프리셋으로 지정
 - 외부 트래킹/모션 데이터를 실시간으로 받아 씬에 반영하기 위한 설정 (버추얼 프로덕션 / 카메라 트래킹 연동 목적)
 
 ---
 
-## 8. 프로젝트 구조
+## 7. 프로젝트 구조
 
 ```
 NDisplay0709/
@@ -115,7 +101,7 @@ NDisplay0709/
 
 ---
 
-## 9. 주요 개발 히스토리 (git)
+## 8. 주요 개발 히스토리 (git)
 
 - 지구/위성 회전·공전 로직 구현 (`BP_Earth` 회전 컴포넌트, `공전 로직`, `Add satellite`)
 - 지형(Terrain) 액터 추가 및 달 지형 에셋 통합
@@ -125,14 +111,3 @@ NDisplay0709/
 - 레벨 레이아웃 조정 (MainTest / MainDumy)
 
 ---
-
-## 10. 실행 방법 (요약)
-
-1. Unreal Engine **5.7**로 `NDisplay0709.uproject` 열기
-2. 에디터에서 `MainTest` 레벨 확인 (기본 시작 맵)
-3. nDisplay 실행 시 **Switchboard**로 클러스터 노드(NDC_Origin_01 구성) 실행·동기화
-4. 필요 시 **LiveLink**(PreSet01)로 외부 트래킹 데이터 연결
-
----
-
-*문서 자동 생성: 프로젝트 파일 및 git 이력 기반*
